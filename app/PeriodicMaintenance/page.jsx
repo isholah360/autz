@@ -44,7 +44,7 @@ const PeriodicMaintenance = () => {
 
   return (
     <div>
-      <Image src={Maintain} className="h-[70vh] w-full" />
+      <Image src={Maintain} className="h-[70vh] w-full" alt="" />
 
       <div className="flex flex-row items-center lg:text-xl text-[10px] justify-center lg:gap-12 gap-2 py-12 text-gray-500 font-bold overscroll-auto overflow-x-scroll lg:overflow-clip overflow-auto">
         <p

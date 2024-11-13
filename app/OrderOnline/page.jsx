@@ -12,7 +12,7 @@ import Link from "next/link";
 const OrderOnline = () => {
   return (
     <div className="relative ">
-      <Image src={order} className="w-full h-[70vh]" />
+      <Image src={order} className="w-full h-[70vh]" alt=""  />
 
       <div className="h-1 w-44 bg-red-500 my-24 mx-auto" />
       <div className="py-12 lg:p-20 p-4">
