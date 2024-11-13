@@ -17,26 +17,31 @@ const app = express();
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 
-const handle = nextApp.getRequestHandler();
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
-app.use(express.json());
-app.use(cookieParser());
+nextApp.prepare().then(() => {
+  const handle = nextApp.getRequestHandler(); 
 
-app.use("/api/auth", authRoutes);
-app.use("/api/products", productRoutes);
+  app.use(
+    cors({
+      origin: "http://localhost:3000", 
+      credentials: true,
+    })
+  );
+  app.use(express.json());
+  app.use(cookieParser());
 
-app.all("*", (req, res) => {
-  return handle(req, res);
-});
+  // Define API routes
+  app.use("/api/auth", authRoutes);
+  app.use("/api/products", productRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  nextApp.prepare().then(() => {
+
+  app.all("*", (req, res) => {
+    return handle(req, res);
+  });
+
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
+}).catch((err) => {
+  console.error("Error starting Next.js:", err);
 });
