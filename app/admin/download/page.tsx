@@ -7,7 +7,7 @@ export default function Page() {
 
   // Function to trigger file download using fetch
   const handleDownload = async () => {
-    const fileUrl = "http://localhost:5000/api/customers/download-excel";
+    const fileUrl = "https://autz.onrender.com/api/customers/download-excel";
     try {
     
       const response = await fetch(fileUrl, {

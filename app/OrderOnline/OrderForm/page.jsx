@@ -117,7 +117,7 @@ const OrderForm = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/customers/submit-customer",
+        "https://autz.onrender.com/api/customers/submit-customer",
         {
           method: "POST",
           headers: {
