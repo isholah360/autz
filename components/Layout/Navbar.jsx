@@ -9,7 +9,7 @@ import { translations } from "@/components/context/translations";
 const Navbar = () => {
   
   // const [isOpen, setIsOpen] = useState(false);
-  const [direction, setDirection] = useState("ltr");
+  // const [direction, setDirection] = useState("ltr");
 
   // const languages = [
   //   { name: "English", code: "en", dir: "ltr" },
@@ -27,9 +27,7 @@ const Navbar = () => {
     <div className="px-6 lg:py-6 py-3 lg:text-sm text-xs">
       <div className="flex items-center  justify-between">
         <div
-          className={`inline-flex items-center lg:gap-6 gap-2 ${
-            direction === "rtl" ? "flex-row-reverse" : ""
-          }`}
+          className={`inline-flex items-center lg:gap-6 gap-2`}
         >
           <div className="inline-flex items-center gap-2">
             <IoIosSearch />
@@ -37,7 +35,7 @@ const Navbar = () => {
             {translations[language].barSearch}
             </span>
           </div>
-
+            
           <div className="bg-gray-500 h-4 w-[0.2px]" />
 
           <div className="relative">
