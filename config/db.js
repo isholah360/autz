@@ -4,8 +4,8 @@ const connectDB = async () => {
   try {
     
   
-    const konect = await mongoose.connect(process.env.MONGO_URI)
-    //  const konect = await mongoose.connect('mongodb://localhost:27017/autos')
+    // const konect = await mongoose.connect(process.env.MONGO_URI)
+     const konect = await mongoose.connect('mongodb://localhost:27017/autos')
     console.log(`auto app Server is connecetd to ${konect.connection.host}`)
     
 } catch (error) {

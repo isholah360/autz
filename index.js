@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
 const authRoutes = require("./router/authRoutes");
-const productRoutes = require("./router/productRoutes");
+const customerRoute = require("./router/customerRoute");
 const cookieParser = require("cookie-parser");
 const next = require("next");
 const path = require("path");
@@ -31,7 +31,7 @@ nextApp.prepare().then(() => {
 
   // Define API routes
   app.use("/api/auth", authRoutes);
-  app.use("/api/products", productRoutes);
+  app.use("/api/customers", customerRoute);
 
 
   app.all("*", (req, res) => {
