@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import Link from "next/link";
 import LanguageSwitcher from "../lang/languageSwitcher";
