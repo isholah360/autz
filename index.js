@@ -32,7 +32,9 @@ nextApp.prepare().then(() => {
   // Define API routes
   app.use("/api/auth", authRoutes);
   app.use("/api/customers", customerRoute);
-
+  app.get('/api/test/hello', (req, res) => {
+    res.send('Hello, World!');
+  });
 
   app.all("*", (req, res) => {
     return handle(req, res);

@@ -99,7 +99,7 @@ const OrderForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+   console.log("clicked")
     const isValid = Object.values(formData).every(
       (value) => value !== "" && value !== false
     );
