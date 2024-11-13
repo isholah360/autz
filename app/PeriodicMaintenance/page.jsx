@@ -15,10 +15,10 @@ import Urban from "../../components/PeriodicMaintenance/Urban";
 const PeriodicMaintenance = () => {
   const [activeTab, setActiveTab] = useState("1000KM");
 
-  const SuvMpvComponent = () => <div className="p-4">5000KM Content</div>;
-  const CommercialComponent = () => (
-    <div className="p-4">Commercial Content</div>
-  );
+  // const SuvMpvComponent = () => <div className="p-4">5000KM Content</div>;
+  // const CommercialComponent = () => (
+  //   <div className="p-4">Commercial Content</div>
+  // );
 
   const renderComponent = () => {
     switch (activeTab) {

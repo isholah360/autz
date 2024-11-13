@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { FaArrowup, FaArrowDown } from "react-icons/fa";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 const FortyAccordion = () => {

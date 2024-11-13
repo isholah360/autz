@@ -11,7 +11,7 @@ import Pass5 from "../../public/pass6.jpeg";
 import Pass6 from "../../public/pass6.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation"; // Swiper navigation styles
 

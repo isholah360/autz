@@ -1,28 +1,26 @@
 "use client";
 import React, { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
-import { CiGlobe } from "react-icons/ci";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 import LanguageSwitcher from "../lang/languageSwitcher";
 import { useLanguage } from "@/components/context/language-context";
 import { translations } from "@/components/context/translations";
 
 const Navbar = () => {
-  // const [language, setLanguage] = useState("English");
-  const [isOpen, setIsOpen] = useState(false);
+  
+  // const [isOpen, setIsOpen] = useState(false);
   const [direction, setDirection] = useState("ltr");
 
-  const languages = [
-    { name: "English", code: "en", dir: "ltr" },
-    { name: "العربية", code: "ar", dir: "rtl" },
-  ];
+  // const languages = [
+  //   { name: "English", code: "en", dir: "ltr" },
+  //   { name: "العربية", code: "ar", dir: "rtl" },
+  // ];
 
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang.name);
-    setDirection(lang.dir);
-    setIsOpen(false);
-  };
+  // const handleLanguageChange = (lang) => {
+  //   setLanguage(lang.name);
+  //   setDirection(lang.dir);
+  //   setIsOpen(false);
+  // };
 
   const { language } = useLanguage();
   return (

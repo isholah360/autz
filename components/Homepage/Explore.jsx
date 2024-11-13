@@ -8,10 +8,10 @@ import React, { useState } from "react";
 const Explore = () => {
   const [activeTab, setActiveTab] = useState("PASSENGER");
 
-  const SuvMpvComponent = () => <div className="p-4">SUV & MPV Content</div>;
-  const CommercialComponent = () => (
-    <div className="p-4">Commercial Content</div>
-  );
+  // const SuvMpvComponent = () => <div className="p-4">SUV & MPV Content</div>;
+  // const CommercialComponent = () => (
+  //   <div className="p-4">Commercial Content</div>
+  // );
 
   const renderComponent = () => {
     switch (activeTab) {

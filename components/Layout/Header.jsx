@@ -13,7 +13,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOne, setMenuOne] = useState(false);
 
-  const [isOpen2, setIsOpen2] = useState(false);
+  // const [isOpen2, setIsOpen2] = useState(false);
   const [menuOne2, setMenuOne2] = useState(false);
   const { language } = useLanguage();
 

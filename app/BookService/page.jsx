@@ -8,7 +8,7 @@ import Cap from "../../public/cap.png";
 const BookService = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen2, setIsOpen2] = useState(false);
+  // const [isOpen2, setIsOpen2] = useState(false);
   const [selectedMethods, setSelectedMethods] = useState({
     selectAll: false,
     sms: false,

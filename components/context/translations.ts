@@ -34,9 +34,9 @@ type TranslationKeys = {
   downloadReport: string;
 };
 
-type Translations = {
-  [languageCode: string]: TranslationKeys;
-};
+// type Translations = {
+//   [languageCode: string]: TranslationKeys;
+// };
 
 
 export const translations = {

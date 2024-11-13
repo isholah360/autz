@@ -11,7 +11,7 @@ import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 const OrderForm = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [isOpen2, setIsOpen2] = useState(false);
+  // const [isOpen2, setIsOpen2] = useState(false);
   const [selectedMethods, setSelectedMethods] = useState({
     selectAll: false,
     sms: false,

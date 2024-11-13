@@ -6,11 +6,11 @@ import { languages } from "../context/settings"; // Importing correctly
 import { CiGlobe } from "react-icons/ci";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-// Define language options with names
-const languageOptions = [
-  { code: 'en', name: 'English' },
-  { code: 'ar', name: 'العربية' }
-];
+
+// const languageOptions = [
+//   { code: 'en', name: 'English' },
+//   { code: 'ar', name: 'العربية' }
+// ];
 
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
