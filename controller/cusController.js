@@ -54,7 +54,7 @@ const downloadCustomerExcel = async (req, res) => {
         brand: customer.brand,
         vehicleInfo: customer.vehicleInfo,
         address: customer.address,
-        paymentTypes: customer.payment,
+        paymentTypes: customer.paymentTypes,
         phone: customer.phone,
         email: customer.email,
         additionalInfo: customer.additionalInfo,
