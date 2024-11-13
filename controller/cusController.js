@@ -39,7 +39,7 @@ const downloadCustomerExcel = async (req, res) => {
       { header: 'Brand', key: 'brand', width: 20 },
       { header: 'Vehicle Info', key: 'vehicleInfo', width: 30 },
       { header: 'Address', key: 'address', width: 30 },
-      { header: 'Payment', key: 'payment', width: 15 },
+      { header: 'Payment', key: 'paymentTypes', width: 15 },
       { header: 'Phone', key: 'phone', width: 15 },
       { header: 'Email', key: 'email', width: 30 },
       { header: 'Additional Info', key: 'additionalInfo', width: 50 },
